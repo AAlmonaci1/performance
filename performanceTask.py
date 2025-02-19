@@ -31,7 +31,7 @@ def storyPlay(story_option):
             handsome = input("10/10 Enter another noun for a character:").lower()
         
             print(f"""
-                                                        The Magical {magic_item}
+                                                        the magical {magic_item}
 Once upon a time there was a {adj} {main_character} who lived in a giant {place}. One day a {noun} came to visit, bringing news about a magical {magic_item} in a nearby {place2}.
 The {main_character} was very {feeling} to hear such interesting news and quickly made plans to visit the {place2}.
 Before they arrived, a ghastly {animal} leaped out in front of their carriage. The {animal} demanded all of their {valuable_noun}s.
@@ -62,7 +62,7 @@ The end.
             feeling = input("15/15 Enter a feeling: ").lower()
 
             print(f"""
-                                        {feeling} to be Alive
+                                        {feeling} to be alive
 One morning, on the 22nd of july, I was walking near a {noun} when I heard a(n) {adj} cracking BANG! I {adv}
 turned to look in the direction it came from. What I saw made me {verb}. I couldn't believe it!
 The entire side of the mountain had {verb2} and there was a(n) {adj2} cloud of smoke {adv2} it. I was frozen in place until the second {adj3} 
@@ -92,7 +92,7 @@ ________________________________________________________________________________
 print("Wait hold on! We have more stories in Mad Libs!")
 
 while True:
-    startGame =  input("Would you like to hear a story on Horror or Funny? ").lower()
+    startGame =  input("Would you like to hear a Spooky or Funny mad lib? ").lower()
     if startGame == "yes":
         print("Great let's start!") ################# put all code after here
         break
@@ -102,11 +102,11 @@ while True:
     else:
         print("Please enter either 'yes' or 'no'")
 
-story_option2 = ["Horror", "funny"]
+story_option2 = ["spooky", "funny"]
 
 def storyPlay2(story_option2):
      while True:  
-        if story_option2 == "horror":
+        if story_option2 == "spooky":
             noun = input("1/13 Enter a noun: ").lower()
             verb = input("2/13 Enter a present tense verb: ").lower()
             noise = input("3/13 Enter a sound: ").lower()
@@ -122,7 +122,7 @@ def storyPlay2(story_option2):
             adj2 = input("13/13 Enter an adjective: ").lower()
         
             print(f"""
-                                            The Spooky {adj} Path
+                                            the scary {noise}
 One night me and my {noun} were {verb} along a hidden path. All of a sudden we heard a loud {noise} from deep in
 the {place}. The noise made us {verb2} out of our {noun2}. We started to {verb3} as fast as we could! Just when we
 thought we got far enough away, we stumbled upon a {creature} that started talking to us about {noun3}. Never in my
@@ -133,26 +133,42 @@ reached our destination. What a {adj2} night it was!
 """)
             other_story= input("Would you like to hear the other story? ")
             if other_story == 'yes':
-                    story_option2 = input("Which story path will you like to take? Horror or Funny... ").lower()
+                    story_option2 = input("Which story path will you like to take? Spooky or Funny... ").lower()
             else:
                 break
             
         elif story_option2 == "funny":
+            noun = input("1/11 Enter a noun: ").lower()
+            verb = input("2/11 Enter a present tense verb: ").lower()
+            noun2 = input("3/11 Enter a noun: ").lower()
+            proper_noun = input("4/11 Enter a proper noun: ").lower()
+            verb2 = input("5/11 Enter a past tense verb: ").lower()
+            noun3 = input("6/11 Enter a noun: ").lower()
+            bodyPart = input("7/11 Enter a body part").lower()
+            person = input("8/11 Enter a character:").lower()
+            adj = input("9/11 Enter an adjective: ").lower()
+            activity = input("10/11 Enter an activity: ").lower()
+            restaurant = input("11/11 Enter a restaurant name").lower()
+                
            
             print(f"""
-
+                                            not so {adj} {noun}
+A {noun} in {state} was arrested this morning after they {verb} in front of {noun2}. {proper_noun}, had a history of {verb} with a {noun3} stuck
+in their {bodyPart}. Their {person} states, "I thought they were {adj}, I never thought they would do anything like this... this is {feeling}!"
+After a brief {activity} , the cops followed them to {restaurant} where they reportedly {verb2} in the back of the restaurant. After witnessing 
+them {verb} with a {noun2} there. They are probably going to need a whole lot of therapy...
 """)
             other_story= input("Would you like to hear the other story? ")
             if other_story == 'yes':
-                    story_option2 = input("Which story path will you like to take? Horror or Funny... ").lower()
+                    story_option2 = input("Which story path will you like to take? Spooky or Funny... ").lower()
             else:
                 break
         
         elif story_option2 != "horror" or "funny":
-            print("please enter either 'horror' or 'funny'")
-            story_option2 = input("Which story path will you like to take? Horror or Funny... ").lower()
+            print("please enter either 'spooky' or 'funny'")
+            story_option2 = input("Which story path will you like to take? Spooky or Funny... ").lower()
 
        
     
-story_option2 = storyPlay2(input("Which story path will you like to take? Horror or Funny... ").lower())
+story_option2 = storyPlay2(input("Which story path will you like to take? Spooky or Funny... ").lower())
 print("Thank you for playing")
